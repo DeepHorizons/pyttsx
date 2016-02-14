@@ -18,7 +18,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 import platform
 from setuptools import setup
 
-install_requires = []
+install_requires = ['six']
 if platform.system() == 'Windows':
     install_requires = [
         'win32com'
