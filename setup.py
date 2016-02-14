@@ -19,12 +19,9 @@ import platform
 from setuptools import setup
 
 install_requires = ['six']
-if platform.system() == 'Windows':
-    install_requires = [
-        'win32com'
-    ]
+
 elif platform.system() == 'Darwin':
-    install_requires = [
+    install_requires += [
         'pyobjc>=2.4'
     ]
 
