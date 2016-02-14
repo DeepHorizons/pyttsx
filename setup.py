@@ -20,7 +20,7 @@ from setuptools import setup
 
 install_requires = ['six']
 
-elif platform.system() == 'Darwin':
+if platform.system() == 'Darwin':
     install_requires += [
         'pyobjc>=2.4'
     ]
